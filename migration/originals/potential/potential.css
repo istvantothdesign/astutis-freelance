@@ -1,0 +1,15 @@
+/* Chagning the color of the icon */
+body.tenant-user-gests a span.flex-icon {
+  color: white !important;
+  background-color: green !important;
+  border-radius: 6px;
+}
+/* Centering courses grid on dashboard */
+/* Setting the width of the course cards */
+#page-totara-dashboard-1
+  [data-items-per-row="7"]
+  .block_current_learning-tile
+  .block_current_learning-tiles
+  .block_current_learning-tile {
+  width: calc(27.28% - calc(2 * var(--gap-2))) !important;
+}

@@ -1,0 +1,56 @@
+/* Centering the banner block */
+.block-totara-featured-links-layout {
+  width: 100%;
+  max-width: 1140px;
+}
+#page-totara-dashboard-1 #block-region-top .content.block-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Removing backgrounds */
+.block_totara_featured_links.block.no-header.chromeless {
+  background: transparent;
+}
+
+#region-main .block_html.block.chromeless {
+  background: transparent;
+}
+
+/* Centering elements, setting max width and removing padding*/
+#page-totara-dashboard-1 .page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+#page-totara-dashboard-1 #region-top {
+  width: 100%;
+}
+
+#page-totara-dashboard-1 #region-main {
+  width: 100%;
+  max-width: 1150px;
+  padding: 0;
+}
+
+#page-totara-dashboard-1 #region-main .content.block-content {
+  padding: 0 !important;
+}
+#page-totara-dashboard-1 .page-content #region-top .content.block-content {
+  padding: 0;
+}
+
+#page-totara-dashboard-1 #page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#page-totara-dashboard-1 #page-content .row {
+  max-width: 1150px;
+}

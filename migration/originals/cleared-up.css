@@ -1,0 +1,66 @@
+.gradient-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 35px;
+  background: linear-gradient(
+    286deg,
+    #ff6f30 0%,
+    #3e3eff 54%,
+    #a243ff 78%,
+    #3127a4 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.greeting {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: rgb(29, 33, 37);
+  font-size: 29px;
+  line-height: 35px;
+}
+
+.welcome-message {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(29, 33, 37);
+  font-size: 19px;
+  line-height: 29px;
+}
+body {
+  background-image: url("https://i.imgur.com/v3BHfJg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body.tenant-user-buildempire {
+  background-image: url("https://i.imgur.com/v3BHfJg.jpeg");
+}
+body.tenant-user-gests {
+  background-image: url("https://i.imgur.com/stW23IZ.jpeg");
+}
+body.tenant-user-hybridhse {
+  background-image: url("https://i.imgur.com/BNThAHQ.png");
+}
+body.tenant-user-ciob {
+  background-image: url("");
+}
+body.tenant-user-stjohnambulance {
+  background-image: url("");
+}
+body.tenant-user-almashreq {
+  background-image: url("");
+}
+body.tenant-user-makeuk {
+  background-image: url("");
+}
+body.tenant-user-edwardsvacuum {
+  background-image: url("");
+}
