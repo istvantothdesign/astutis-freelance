@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ast-ftr h2,
+p {
+  padding: 0;
+}
+
+.ast-ftr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c0b28;
+  color: #ffffff;
+}
+
+.ast-ftr__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1080px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.ast-ftr__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ast-ftr__logo-link {
+  width: 65%;
+  max-width: 183px;
+}
+
+.ast-ftr__link-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.ast-ftr__link-item {
+  max-width: 24px;
+}
+
+.ast-ftr__link-item img {
+  width: 100%;
+}
+
+.ast-ftr__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ast-ftr__about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ast-ftr__buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.ast-ftr__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c0b28;
+  background-color: white;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.ast-ftr__button.is--outlined {
+  background-color: transparent;
+  color: white;
+}
