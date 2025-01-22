@@ -28,6 +28,8 @@
 }
 .path-totara-dashboard #region-top {
   width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .path-totara-dashboard #region-main {
