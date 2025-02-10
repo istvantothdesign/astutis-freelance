@@ -1,0 +1,102 @@
+/* Variables */
+:root {
+  --nav-bg-color: #ffffff;
+  --nav-text-color: #232f3e;
+  --color-primary: #0096d6;
+  --link-color: #232f3e;
+  --color-state: #0096d6;
+  --color-text: #232f3e;
+  --color-background: #ffffff;
+  --footer-bg-color: #232f3e;
+  --footer-text-color: #232f3e;
+  --tile-format-color1: #0096d6;
+  --tile-format-color2: #f3f3f3;
+  --tile-format-color3: #ffffff;
+  --tile-format-color-title: #007eb4;
+  --tile-format-color-checkbox: #0096d6;
+  --themecolors-headertext-color: #232f3e;
+  --themecolors-block-headertext-color: #232f3e;
+  --themecolors-nav-sub-bg-color: #232f3e;
+  --themecolors-nav-sub-text-color: #ffffff;
+  --themecolors-nav-sub-hover-effect-color: #f7f7f7;
+  --themecolors-nav-sub-active-color: #0096d6;
+  --themecolors-btn-primary-color: #0096d6;
+  --themecolors-btn-primary-color-hoverstate: #007eb4;
+  --themecolors-btn-primary-text-color: #ffffff;
+  --themecolors-btn-primary-text-color-hoverstate: #ffffff;
+  --themecolors-btn-primary-border-color: #0096d6;
+  --themecolors-btn-primary-border-color-hoverstate: #007eb4;
+  --themecolors-btn-secondary-color: #ffffff;
+  --themecolors-btn-secondary-color-hoverstate: #007eb4;
+  --themecolors-btn-secondary-text-color: #0096d6;
+  --themecolors-btn-secondary-text-color-hoverstate: #ffffff;
+  --themecolors-btn-secondary-border-color: #0096d6;
+  --themecolors-btn-secondary-border-color-hoverstate: #007eb4;
+  --themecolors-btn-tertiary-color: #d9dce5;
+  --themecolors-btn-tertiary-color-hoverstate: #d2d4d4;
+  --themecolors-btn-tertiary-text-color: #232f3e;
+  --themecolors-btn-tertiary-text-color-hoverstate: #232f3e;
+  --themecolors-btn-tertiary-border-color: #d9dce5;
+  --themecolors-btn-tertiary-border-color-hoverstate: #d2d4d4;
+  --nav-selected-color: #0096d6;
+  --link-color-hover: #192534;
+  --color-state-hover: #008ccc;
+  --color-state-focus: #008ccc;
+  --color-state-active: #007bbb;
+  --footer-text-color-hover: #192534;
+}
+
+/* Changing the color of the topics */
+.tenant-user-amazon {
+  & .course-content {
+    & ul.topics:has(> li:nth-child(2)) {
+      .section-summary {
+        width: 700px;
+        border-radius: 0.8rem;
+        margin-block-end: 2rem;
+        cursor: pointer;
+        padding-inline-end: 30px;
+        transition: all 200ms;
+        box-shadow: -5px 5px 8px 0 #00000010;
+        border-inline-start: 13px solid #342ba6;
+      }
+    }
+  }
+}
+
+.tenant-user-amazon {
+  & .course-content {
+    & ul.topics:has(> li:nth-child(2)) {
+      .section-summary:nth-of-type(2n) {
+        border-inline-start-color: #bb74ff;
+      }
+    }
+  }
+}
+
+/* Originals */
+/* Tiles:#f3f3f3 */
+/* Header: #232F3E */
+
+/* Variable solutions */
+/* Changing the color of the topics */
+.course-content {
+  & ul.topics:has(> li:nth-child(2)) {
+    .section-summary {
+      border-inline-start: 13px solid var(--tile-format-color1) !important;
+    }
+  }
+}
+
+.course-content {
+  & ul.topics:has(> li:nth-child(2)) {
+    .section-summary:nth-of-type(2n) {
+      border-inline-start: 13px solid var(--tile-format-color2) !important;
+    }
+  }
+}
+
+/* Turning the footer logo white */
+.ast-ftr__logo-link img {
+  filter: grayscale(1) brightness(0) invert(1);
+}
