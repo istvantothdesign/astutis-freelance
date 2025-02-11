@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Istvan's additional code */
+.ast-ftr h2,
+p {
+  padding: 0;
+}
+
+.ast-ftr p {
+  opacity: 0.65;
+}
+
+.ast-ftr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  container-type: inline-size;
+  container-name: ftr-container;
+}
+
+.ast-ftr__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1150px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.ast-ftr__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ast-ftr__logo-link {
+  width: 65%;
+  max-width: 183px;
+}
+
+.ast-ftr__link-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+.ast-ftr__link-item {
+  max-width: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.ast-ftr__link-item:hover {
+  filter: brightness(0.85);
+}
+
+.ast-ftr__link-item img {
+  width: 100%;
+}
+
+.ast-ftr__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ast-ftr__about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ast-ftr__buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.ast-ftr__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c0b28 !important;
+  background-color: white;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.ast-ftr__button:hover {
+  filter: brightness(0.85);
+  color: #0c0b28 !important;
+}
+
+.ast-ftr__button.is--outlined {
+  background-color: transparent;
+  color: white !important;
+}
+
+#page-footer .container-fluid {
+  width: 100% !important;
+}
+
+#page-footer {
+  display: grid !important;
+}
+
+@container ftr-container (max-width: 850px) {
+  .ast-ftr {
+    text-align: center !important;
+  }
+  .ast-ftr__container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center !important;
+  }
+
+  .ast-ftr__copy {
+    order: -1;
+  }
+
+  .ast-ftr__links {
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .ast-ftr__buttons {
+    flex-direction: column;
+  }
+}

@@ -100,3 +100,28 @@
 .ast-ftr__logo-link img {
   filter: grayscale(1) brightness(0) invert(1);
 }
+
+/* Changing icon colours */
+ul.topics {
+  & .content {
+    & ul.section {
+      & li.activity:not(.modtype_label) {
+        & .mod-indent-outer > div:not(.mod-indent) {
+          & .activityinstance {
+            & a {
+              .flex-icon {
+                color: white !important;
+                background-color: var(--color-primary) !important;
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.flex-icon.ft-fw.ft.activityicon::before {
+  background: white !important;
+}
